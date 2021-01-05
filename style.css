@@ -1,12 +1,13 @@
 body {
   margin: 0;
   background: no-repeat url(img/bodyImg.svg);
-  background-size: auto;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 
 .wrapper {
   margin: 0 0 0 200px;
-  padding-bottom: 150px;
 }
 
 .header {
@@ -115,8 +116,8 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+  margin-top: -11%;
   margin-left: -41px;
-  margin-top: -41px;
   justify-content: center;
   flex-direction: column;
   position: absolute;
@@ -163,11 +164,12 @@ body {
 
 .main-section {
   display: flex;
+  width: 100%;
 }
 
 .main-content {
   margin-right: 16%;
-  width: 63%;
+  max-width: 567px;
 }
 
 .main-content__subtitle {
@@ -221,33 +223,30 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin-top: 94px;
+  overflow: hidden;
 }
 
 .image-content__1st {
   padding: 211px 159px;
   background: no-repeat url(img/1stImg.png);
-  background-size: contain;
+  background-size: cover;
   margin-right: 34px;
 }
 
 .image-content__2nd {
   padding: 190px 142px;
   background: no-repeat url(img/2ndImg.png);
-  background-size: contain;
+  background-size: cover;
   margin-right: 34px;
 }
 
 .image-content__3rd {
   padding: 190px 105px;
   background: no-repeat url(img/3rdImg.png);
-  background-size: contain;
+  background-size: cover;
 }
 
 @media (max-width: 1366px) {
-  body {
-    background-size: 1366px auto;
-  }
-
   .wrapper {
     margin: 0 0 0 142px;
   }
@@ -267,6 +266,11 @@ body {
   .menu__item {
     font: 16px/19px "Museo Sans Cyrl", arial, helvetica, sans-serif;
     margin-right: 29px;
+  }
+
+  .main-content {
+    margin-right: 15%;
+    max-width: 416px;
   }
 
   .main-content__title {
@@ -326,7 +330,8 @@ body {
   }
 
   .main-content {
-    margin-right: 8%;
+    margin-right: 7%;
+    max-width: 400px;
   }
 
   .main-content__description {
@@ -335,7 +340,6 @@ body {
 
   .image-content__3rd {
     padding: 135px 19px;
-    background-size: cover;
   }
 }
 
@@ -346,11 +350,12 @@ body {
 
   .menu {
     display: none;
+    padding-top: 0;
   }
 
   .header {
     margin: auto 34px 60px 41px;
-    padding-top: 41px;
+    padding-top: 11%;
   }
 
   .logo {
@@ -367,13 +372,13 @@ body {
 
   .main-content {
     margin-left: 4%;
-    width: auto;
+    max-width: 92%;
+    margin-right: 0;
   }
 
   .main-content__title {
     font: 700 60px/78px "PT Serif", Arial, Helvetica, Sans-serif;
-    padding-left: 60px;
-    margin-bottom: 37px;
+    margin-bottom: 10%;
   }
 
   .main-content__subtitle {
@@ -383,7 +388,7 @@ body {
 
   .main-content__description {
     text-align: center;
-    margin: auto 27px 35px;
+    margin: auto 28px 11%;
     font: 500 18px/22px "Museo Sans Cyrl", Arial, Helvetica, Sans-serif;
   }
 
@@ -407,5 +412,19 @@ body {
 
   .main-content__button:hover {
     opacity: 1;
+  }
+}
+
+@media (max-width: 360px) {
+  .main-content__title {
+    font: 700 50px/65px "PT Serif", Arial, Helvetica, Sans-serif;
+  }
+
+  .main-content__subtitle {
+    font: bold 150px/195px "PT Serif", Arial, Helvetica, Sans-serif;
+  }
+
+  .main-content__description {
+    font: 500 16px/20px "Museo Sans Cyrl", Arial, Helvetica, Sans-serif;
   }
 }
