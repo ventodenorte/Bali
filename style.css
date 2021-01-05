@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 132px;
-  margin-right: 107px;
+  margin-right: 120px;
 }
 
 .logo {
@@ -318,7 +318,7 @@ body {
 
   .header {
     margin-bottom: 97px;
-    margin-right: 35px;
+    margin-right: 36px;
   }
 
   .menu {
@@ -331,6 +331,11 @@ body {
 
   .main-content__description {
     margin-right: -1%;
+  }
+
+  .image-content__3rd {
+    padding: 135px 19px;
+    background-size: cover;
   }
 }
 
