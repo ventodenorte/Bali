@@ -354,11 +354,6 @@ body {
 }
 
 @media (max-width: 767px) {
-  body {
-    background: no-repeat url(img/mobilBodyImg.png);
-    background-size: cover;
-  }
-
   .wrapper {
     margin: 0;
   }
@@ -430,6 +425,13 @@ body {
   }
 }
 
+@media (max-width: 479px) {
+  body {
+    background: no-repeat url(img/mobilBodyImg.svg);
+    background-size: cover;
+  }
+}
+
 @media (max-width: 360px) {
   .main-content__title {
     font: 700 50px/65px "PT Serif", Arial, Helvetica, Sans-serif;
@@ -441,5 +443,29 @@ body {
 
   .main-content__description {
     font: 500 16px/20px "Museo Sans Cyrl", Arial, Helvetica, Sans-serif;
+  }
+}
+
+@media (max-width: 320px) {
+  .header {
+    margin-bottom: 6%;
+  }
+  
+  .main-content__title {
+    font: 700 47px/60px "PT Serif", Arial, Helvetica, Sans-serif;
+  }
+
+  .main-content__subtitle {
+    margin-bottom: -65px;
+  }
+
+  .main-content__description {
+    font: 500 14px/18px "Museo Sans Cyrl", Arial, Helvetica, Sans-serif;
+  }
+
+  .main-content__button {
+    padding: 10px 50px;
+    font: 500 14px/18px "Museo Sans Cyrl", Arial, Helvetica, Sans-serif;
+    margin-left: 20%;
   }
 }
